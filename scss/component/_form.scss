@@ -1,0 +1,30 @@
+//============================
+// Form
+//============================
+
+form {
+    @include mq;
+    align-self: center;
+    width: 100%;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin: auto;
+    &:focus {
+        &::placeholder {
+         transition-duration: 2s;
+         transition-property: opacity;
+         opacity: 0;
+        }
+    }
+    @include buttons {
+        margin-bottom: 1em;
+        outline: none;
+        border-style: none;
+        border-bottom: 3px solid $color3;
+
+    }
+}
+

@@ -1,0 +1,71 @@
+//============================
+// Typography
+//============================
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah|Satisfy|Shadows+Into+Light&display=swap');
+
+//font-family: 'Shadows Into Light', cursive;
+//font-family: 'Amatic SC', cursive;
+//font-family: 'Satisfy', cursive;
+//font-family: 'Gloria Hallelujah', cursive;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+    margin: 1em;
+    color: $color1;
+    line-height: 1.3;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: $color-h1;
+}
+
+p {
+    @include letters;
+    a{
+        font-family: 'Gloria Hallelujah', cursive;
+        display: inline;
+        color: $color-marked; 
+    }
+}
+
+a{
+    @include letters;
+    text-decoration: none;
+    display: block;
+    color: $color1;
+}
+
+blockquote {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5rem;
+    border-left: solid 8px $color-h1;
+    padding-left: 0.5em;
+    border-radius: 8px 0 0 8px;
+}
+
+h4 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;   
+}
+
+label {
+    display: none;
+}
+
+legend {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+}
+
+div {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+

@@ -1,0 +1,24 @@
+//============================
+// Buttons
+//============================
+
+button {
+    @include buttons;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    margin-right: 10px;
+}
+
+@each $button, $color in $button-colors {
+    .#{$button} {
+        background: $color;
+        color: white;
+        border-style: none;
+        outline: none;
+        transition: .2s;
+        &:hover{
+           background-color: lighten($color, 15%);
+        }
+    }
+}

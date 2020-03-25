@@ -1,0 +1,26 @@
+// ================
+// ----- navigations
+// =================
+header {
+    margin: auto 0;
+    text-align: center;
+    justify-content: space-between;
+    @include mq2 {
+        align-items: center;
+    } 
+    nav a { 
+        @include buttons{
+        font-size: bold;
+        margin: 1em;
+                }
+        transition: .2s;
+           &:hover {
+            background: $color2;
+           color: white;
+            } 
+       }       
+}
+
+nav {
+    @include mq2;
+}

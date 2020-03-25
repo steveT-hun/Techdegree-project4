@@ -1,0 +1,57 @@
+//==========================//
+// Variables
+//==========================//
+
+
+// colors
+
+$color-h1: #16ecb7;
+$color-white: #fff;
+$color-marked: #00bfff;
+
+$color1: #46464d;
+$color2: #09c5c5;
+$color3: #88c443;
+$color4: #ffbf00;
+$color5: #8000ff;
+$color6: coral;
+$color7: #ff0040;
+
+
+$font-size-h1: 3rem;
+$font-size-h4: 1.8rem;
+$font-size-p: 1.5em;
+$font-size-a: 1.5em;
+$font-blockquote: 2em;
+
+//Buttons
+
+$button-colors: (
+    'default':$color2,
+    'success':$color-marked, 
+      'error':$color3, 
+    'warning':$color5, 
+       'info':$color6
+       );
+
+$row-themes: (
+      '3':$color2,
+      '4':$color3,
+      '5':$color4,
+      '6':$color5,
+      '7':$color6,
+      '8':$color7,
+      '12':$color-marked 
+      );
+
+$break-point: (768px);
+
+$flex-basis: (
+     '3': 25%,
+     '4': 33%,
+     '5': 30%,
+     '6': 50%,
+     '7': 70%,
+     '8': 67%,
+    '12': 100%,
+  )

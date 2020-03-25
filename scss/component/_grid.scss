@@ -1,0 +1,31 @@
+//===================
+// Grid
+//======================
+
+
+
+@each $col, $color in $row-themes {
+    .theme.col-#{$col} {
+        background: $color;
+        @include buttons;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+@each $col, $percent in $flex-basis {
+    .row {
+        margin: 1em 0 1em;
+        @include mq2;
+    .col-#{$col} {
+        @include mq2 {
+            flex-basis: $percent;
+            margin-left: .5em;
+            margin-right: .5em;
+            justify-content: space-around;  
+            }
+        }
+    }
+}
+

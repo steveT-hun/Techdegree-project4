@@ -1,0 +1,36 @@
+// ========================
+// Mixins
+// ------------------------
+@mixin letters {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+    @content;
+}
+
+@mixin buttons {
+    padding: .5em;
+    border-radius: 3px;
+    font-family: 'Amatic SC', cursive;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    @content;
+}
+
+@mixin mq {
+    @media (max-width: $break-point){
+        display: flex;
+        flex-direction: column;
+        @content;
+    }
+}
+
+@mixin mq2 {
+    @media (min-width: $break-point){
+        display: flex;
+        @content;
+    }
+}
+
+

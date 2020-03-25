@@ -1,0 +1,19 @@
+//============================
+// Classes
+//============================
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    @include mq;
+}
+
+
+.centered.col-7 {
+    margin: auto;
+}
+
+
+.col-12.first {
+    width: 80%;
+}
