@@ -1,285 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah|Satisfy|Shadows+Into+Light&display=swap");
-* {
-  box-sizing: border-box;
-}
-
-p {
-  font-family: "Amatic SC", cursive;
-  font-size: 1.4em;
-}
-p a {
-  color: #88c443;
-  font-family: "Shadows Into Light", cursive;
-  text-decoration: none;
-}
-p a:active {
-  color: #88c443;
-}
-
-h1 {
-  color: #09c5c5;
-  font-family: "Satisfy", cursive;
-  font-size: 4em;
-}
-
-h4 {
-  display: block;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  font-family: "Shadows Into Light", cursive;
-  font-size: 1.5em;
-}
-
-legend {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-family: "Shadows Into Light", cursive;
-}
-
-body {
-  padding: 1em;
-  margin: 1em;
-  line-height: 1.5;
-}
-
-.blockquote {
-  padding-left: 1em;
-  margin: 2em 0 2em 2em;
-  border-left: 5px solid #88c443;
-  border-radius: 3px 0px 0px 3px;
-  font-family: "Gloria Hallelujah", cursive;
-}
-
-img,
-.img {
-  display: block;
-  margin: auto;
-}
-img-frame,
-.img-frame {
-  border: 1px solid #46464d;
-  padding: 1em;
-}
-
-input {
-  border-style: initial;
-  border-radius: 0px 0px 2px 2px;
-  padding: 1em;
-  text-align: left;
-  border-bottom: 5px solid #09c5c5;
-  display: block;
-  text-decoration: none;
-}
-@media (min-width: 768px) {
-  input {
-    display: flex;
-  }
-}
-input::placeholder {
-  text-align: left;
-  font-size: 1.2em;
-  font-family: "Shadows Into Light", cursive;
-}
-
-label {
-  display: none;
-}
-
-button {
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-  border-style: none;
-}
-@media (min-width: 768px) {
-  button {
-    display: flex;
-  }
-}
-
-.default {
-  background-color: #09c5c5;
-  color: #fff;
-  margin: 6px 0 6px 0;
-  text-transform: uppercase;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-.success {
-  background-color: #88c443;
-  color: #fff;
-  margin: 6px 0 6px 0;
-  text-transform: uppercase;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-.error {
-  background-color: #ffbf00;
-  color: #fff;
-  margin: 6px 0 6px 0;
-  text-transform: uppercase;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-.warning {
-  background-color: #8000ff;
-  color: #fff;
-  margin: 6px 0 6px 0;
-  text-transform: uppercase;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-.info {
-  background-color: coral;
-  color: #fff;
-  margin: 6px 0 6px 0;
-  text-transform: uppercase;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-.row {
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-}
-
-.card {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-.theme.col-3 {
-  background: #09c5c5;
-  display: block;
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-  color: #fff;
-}
-
-.theme.col-4 {
-  background: #88c443;
-  display: block;
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-  color: #fff;
-}
-
-.theme.col-5 {
-  background: #ffbf00;
-  display: block;
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-  color: #fff;
-}
-
-.theme.col-6 {
-  background: #8000ff;
-  display: block;
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-  color: #fff;
-}
-
-.theme.col-7 {
-  background: coral;
-  display: block;
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-  color: #fff;
-}
-
-.theme.col-8 {
-  background: #ff0040;
-  display: block;
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-  color: #fff;
-}
-
-.theme.col-12 {
-  background: #00bfff;
-  display: block;
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-  color: #fff;
-}
-
-@media (min-width: 768px) {
-  .col12 {
-    display: flex;
-  }
-}
-
-.nav {
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-@media (max-width: 768px) {
-  .nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-}
-.nav a {
-  display: block;
-  text-decoration: none;
-  padding: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 5px;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.2em;
-  font-weight: 600;
-  color: #46464d;
-  transition-duration: 0.3s;
-}
-.nav a:hover {
-  background: #09c5c5;
-  color: #fff;
-}
-
-header {
-  justify-content: space-between;
-}
-@media (min-width: 768px) {
-  header {
-    display: flex;
-  }
-}
-@media (min-width: 768px) {
-  header .nav {
-    display: flex;
-  }
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -287,6 +5,7 @@ header {
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah|Satisfy|Shadows+Into+Light&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -617,6 +336,447 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1em;
+  margin: 1em;
+  color: #46464d;
+  line-height: 1.3;
+}
+
+h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 3rem;
+  color: #16ecb7;
+}
+
+p {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5rem;
+}
+p a {
+  font-family: "Gloria Hallelujah", cursive;
+  display: inline;
+  color: #00bfff;
+}
+
+a {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+  color: #46464d;
+}
+
+blockquote {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 1.5rem;
+  border-left: solid 8px #16ecb7;
+  padding-left: 0.5em;
+  border-radius: 8px 0 0 8px;
+}
+
+h4 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.5rem;
+}
+
+label {
+  display: none;
+}
+
+legend {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.5rem;
+}
+
+div {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+button {
+  padding: 0.5em;
+  border-radius: 3px;
+  font-family: "Amatic SC", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.default {
+  background: #09c5c5;
+  color: white;
+  border-style: none;
+  outline: none;
+  transition: 0.2s;
+}
+.default:hover {
+  background-color: #25f5f5;
+}
+
+.success {
+  background: #00bfff;
+  color: white;
+  border-style: none;
+  outline: none;
+  transition: 0.2s;
+}
+.success:hover {
+  background-color: #4dd2ff;
+}
+
+.error {
+  background: #88c443;
+  color: white;
+  border-style: none;
+  outline: none;
+  transition: 0.2s;
+}
+.error:hover {
+  background-color: #add67d;
+}
+
+.warning {
+  background: #8000ff;
+  color: white;
+  border-style: none;
+  outline: none;
+  transition: 0.2s;
+}
+.warning:hover {
+  background-color: #a64dff;
+}
+
+.info {
+  background: coral;
+  color: white;
+  border-style: none;
+  outline: none;
+  transition: 0.2s;
+}
+.info:hover {
+  background-color: #ffb79d;
+}
+
+form {
+  align-self: center;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 3px;
+  font-family: "Amatic SC", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+  outline: none;
+  border-style: none;
+  border-bottom: 3px solid #88c443;
+}
+input:focus::placeholder {
+  transition-duration: 2s;
+  transition-property: opacity;
+  opacity: 0;
+}
+
+.theme.col-3 {
+  background: #09c5c5;
+  padding: 0.5em;
+  border-radius: 3px;
+  font-family: "Amatic SC", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+}
+
+.theme.col-4 {
+  background: #88c443;
+  padding: 0.5em;
+  border-radius: 3px;
+  font-family: "Amatic SC", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+}
+
+.theme.col-5 {
+  background: #ffbf00;
+  padding: 0.5em;
+  border-radius: 3px;
+  font-family: "Amatic SC", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+}
+
+.theme.col-6 {
+  background: #8000ff;
+  padding: 0.5em;
+  border-radius: 3px;
+  font-family: "Amatic SC", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+}
+
+.theme.col-7 {
+  background: coral;
+  padding: 0.5em;
+  border-radius: 3px;
+  font-family: "Amatic SC", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+}
+
+.theme.col-8 {
+  background: #ff0040;
+  padding: 0.5em;
+  border-radius: 3px;
+  font-family: "Amatic SC", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+}
+
+.theme.col-12 {
+  background: #00bfff;
+  padding: 0.5em;
+  border-radius: 3px;
+  font-family: "Amatic SC", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+}
+
+.row {
+  margin: 1em 0 1em;
+}
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .row .col-3 {
+    display: flex;
+    flex-basis: 25%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+.row {
+  margin: 1em 0 1em;
+}
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .row .col-4 {
+    display: flex;
+    flex-basis: 33%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+.row {
+  margin: 1em 0 1em;
+}
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .row .col-5 {
+    display: flex;
+    flex-basis: 30%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+.row {
+  margin: 1em 0 1em;
+}
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .row .col-6 {
+    display: flex;
+    flex-basis: 50%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+.row {
+  margin: 1em 0 1em;
+}
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .row .col-7 {
+    display: flex;
+    flex-basis: 70%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+.row {
+  margin: 1em 0 1em;
+}
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .row .col-8 {
+    display: flex;
+    flex-basis: 67%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+.row {
+  margin: 1em 0 1em;
+}
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .row .col-12 {
+    display: flex;
+    flex-basis: 100%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+img {
+  display: block;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.img-frame {
+  padding: 1em;
+  border: 1px solid #46464d;
+}
+
+header {
+  margin: auto 0;
+  text-align: center;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+}
+header nav a {
+  padding: 0.5em;
+  border-radius: 3px;
+  font-family: "Amatic SC", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-size: bold;
+  margin: 1em;
+  transition: 0.2s;
+}
+header nav a:hover {
+  background: #09c5c5;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.centered.col-7 {
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

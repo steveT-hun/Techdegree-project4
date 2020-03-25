@@ -8,9 +8,9 @@
     .theme.col-#{$col} {
         background: $color;
         @include buttons;
-        font-size: 1.2em;
         font-weight: bold;
         color: white;
+        justify-content: center;
     }
 }
 
@@ -23,7 +23,6 @@
             flex-basis: $percent;
             margin-left: .5em;
             margin-right: .5em;
-            justify-content: space-around;  
             }
         }
     }
